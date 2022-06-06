@@ -1,0 +1,30 @@
+.header {
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0;
+    color: #fff;
+}
+
+.header__logo img {
+    height: 30px;
+    width: 68px;
+    min-width: 1px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .header__wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+
+    .header__logo {
+        margin-bottom: 20px;
+    }
+}

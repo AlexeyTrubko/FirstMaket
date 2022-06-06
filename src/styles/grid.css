@@ -1,0 +1,46 @@
+.grid {
+  display: flex;
+}
+
+.grid--col-1 .grid__cell {
+  width: 100%;
+}
+
+.grid--col-2 .grid__cell {
+  width: calc(100% / 2);
+}
+
+.grid--col-3 .grid__cell {
+  width: calc(100% / 3);
+}
+
+.grid--col-4 .grid__cell {
+  width: calc(100% / 4);
+}
+
+.grid--col-5 .grid__cell {
+  width: calc(100% / 5);
+}
+
+.grid__cell--content-rigth {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .grid--col-1-m .grid__cell {
+    width: 100%;
+  }
+
+  .grid--direction-col-m {
+    flex-direction: column;
+  }
+
+  .grid__cell {
+    margin-bottom: 50px;
+  }
+
+  .grid__cell:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,69 @@
+.comments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-column-gap: 112px;
+    grid-row-gap: 50px;
+}
+
+.comments__card {
+    display: grid;
+    grid-template-columns: 1fr 160px 160px 1fr;
+    grid-template-rows: repeat(3, fit-content(100%));
+    grid-template-areas: ". comment comment ."
+                         ". avatar name ."
+                         ". avatar post ." ;
+    
+}
+
+.comments__card-comment {
+  font-size: 14px;
+  text-align: center;
+  color: #86878b;
+  border-radius: 7px;
+  padding: 14px;
+  background-color: #e2e2e2;
+  grid-area: comment;
+  margin-bottom: 22px;
+}
+
+.comments__card-avatar {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    grid-area: avatar;
+    margin-left: 45px;
+}
+
+.comments__card-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comments__card-name {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    grid-area: name;
+    align-self: center;
+    text-align: right;
+    margin-right: 45px;
+
+}
+
+.comments__card-post {
+    color: #86878B;
+    font-size: 14px;
+    grid-area: post;
+    text-align: right;
+    margin-right: 45px;
+}
+
+@media screen and (max-width: 600px){
+  .comments{
+grid-template-columns: 1fr;
+  }
+    }
+
+

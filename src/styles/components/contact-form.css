@@ -1,0 +1,118 @@
+.contact-form {
+  display: grid;
+  grid-template-areas: "inputs textarea" "button button";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 69px 221px;
+}
+
+.contact-form__container:nth-child(1) {
+  grid-area: inputs;
+}
+
+.contact-form__container:nth-child(2) {
+  grid-area: textarea;
+}
+
+.contact-form__container:nth-child(3) {
+  grid-area: button;
+}
+
+.contact-form__input {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0 0 2
+  2px 0;
+  font-size: 14px;
+  color: #bdbdbd;
+  background-color: #fff;
+  border-bottom: 1px solid #bdbdbd;
+  width: 100%;
+}
+
+.contact-form__row {
+  margin-bottom: 31px;
+}
+.contact-form__row:last-child {
+  margin-bottom: 0;
+}
+
+/* contact-form__input */
+.contact-form__input::-webkit-input-placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+.contact-form__input::-moz-placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+.contact-form__input:-ms-input-placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+.contact-form__input::-ms-input-placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+.contact-form__input::placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+/* contact-form__input //end */
+
+/* contact-form__textarea */
+.contact-form__textarea {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0 0 32px 0;
+  font-size: 14px;
+  color: #bdbdbd;
+  background-color: #fff;
+  border-bottom: 1px solid #bdbdbd;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form__textarea::-moz-placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+.contact-form__textarea:-ms-input-placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+.contact-form__textarea::-ms-input-placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+.contact-form__textarea::placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+/* contact-form__textarea //end */
+
+.contact-form__button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  background-color: #ec7979;
+  margin: 0;
+  padding: 11px 31px;
+}
+
+.contact-form__container--jc-c {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    grid-template-areas: "inputs" "textarea" "button";
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+}
